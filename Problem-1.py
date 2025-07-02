@@ -6,7 +6,7 @@ class Calculator:
         self.b = b
         self.operation = operation.lower()
 
-    def calculate(self):
+    def cal(self):
         if self.operation == "add":
             return self.a + self.b
         elif self.operation == "sub":
@@ -24,10 +24,9 @@ class Calculator:
 
 a = float(input("Enter (a) value: "))
 b = float(input("Enter  (b) value: "))
-operation = input("Enter operation (add, sub, mul, div): ")
+operation = input("Enter operation [add, sub, mul, div]: ")
 
 calc = Calculator(a, b, operation)
-result = calc.calculate()
+result = calc.cal()
 print("Result:", result)
-
 
